@@ -1,10 +1,10 @@
 # MITID-bootcamp
 Everything you need for MITID bootcamp!
 
-1-[Johnny five → J5.js](#johnny-five)
-⋅⋅⋅⋅1.[Firmata](#firmata)
-⋅⋅⋅⋅2.[P5.js](#p5js)
-⋅⋅⋅⋅3.[Components documentation](#johnny-five-documentation-for-almost-each-components-from-your-kit)
+- [Johnny five → J5.js](#johnny-five)
+  * [Firmata](#firmata)
+  * [P5.js](#p5js)
+  * [Components documentation](#johnny-five-documentation-for-almost-each-components-from-your-kit)
 
 
 
@@ -21,7 +21,7 @@ johnny five fonctionne en deux parties. On commence par téléverser Firmata sur
 
 Steps:
 - Plug in your Arduino or Arduino compatible microcontroller via USB
-- Open the Arduino IDE, select: File > Examples > Firmata > StandardFirmataPlus
+- Open the Arduino IDE, select: `File > Examples > Firmata > StandardFirmataPlus`
 StandardFirmataPlus is available in Firmata v2.5.0 or greater
 - Select your board and port.
 - Click the "Upload" button.
