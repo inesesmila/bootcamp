@@ -8,9 +8,11 @@ Before we begin, here is an overview of the technical components and tools we wi
 ### 🙋🏻‍♂️ Remind me what a library is
 >In programming, a library is **a collection of pre-written code that provides specific tools or functions you can use in your own projects**. Instead of writing everything from scratch, you can use a library to handle tasks such as drawing graphics, working with sound, or managing user interactions—saving time and allowing you to focus on creativity and design.
 
+### How to use this repo
+>[!CAUTION]
+>For each new sketch you want to create, duplicate the `sketch` folder and rename your copy.
 
 ## Table of content
-- [How to use this repo](#how-to-use-this-repo)
 - [P5.js](#p5js)
     * [P5.js minimal setup](#p5js-minimal-setup)
 - [J5.js (Johnny five)](#johnny-five)
@@ -20,11 +22,6 @@ Before we begin, here is an overview of the technical components and tools we wi
   * [Components documentation](#johnny-five-documentation-for-almost-each-components-from-your-kit)
 - [ML5.js](#)
   * [Add bodyPose to your P5.js sketch](#bodypose)
-
-
-## How to use this repo
->[!CAUTION]
->For each new sketch you want to create, duplicate the `sketch` folder and rename your copy.
 
 ## P5.js
 p5.js is a JavaScript library designed to make coding accessible for artists, designers, educators, and beginners. It provides an easy and creative way to draw shapes, create animations, and build interactive visuals directly in a web browser. Built on top of standard JavaScript, **p5.js simplifies complex coding concepts and focuses on visual and interactive design**.
@@ -44,10 +41,8 @@ Then, in your `script.js` file, you can create the skeleton for your p5 sketch
 function setup(){
     // place the code that should run once
 
-    // create a variable "myCanvas" and put the canvas in it
-    let myCanvas = createCanvas(400, 400);
-    // with the .parent method, we can decide where to render the canvas on the page
-    myCanvas.parent("sketch-container");
+    // create a canvas and place it within the html element that has the id "sketch-container"
+    createCanvas(400, 400).parent("sketch-container");
 }
 
 function draw(){
@@ -94,7 +89,7 @@ To create your electronic circuits, you will use your Arduino Uno (the red micro
 
 ### Add J5.js in your P5.js sketch
 
- minimal sketch to switch on a led
+ minimal sketch to use a led!
 
 ```javascript 
 
@@ -125,9 +120,8 @@ function draw(){
     led.brightness(100);
 }
 ```
-
-More informations on leds can be found in the documentation 
-https://johnny-five.io/api/led/
+>[!TIP]
+>🙋🏻‍♂️ More informations on leds can be found in the [documentation↗](https://johnny-five.io/api/led/).
 
 ### johnny five documentation for (almost) each components from your kit
 
@@ -137,7 +131,7 @@ https://johnny-five.io/api/led/
 - [Piezo (buzzer)↗](https://johnny-five.io/api/piezo/)
 - [Servo↗](https://johnny-five.io/api/servo/)
 - [Motor↗](https://johnny-five.io/api/motor/)
-- [LCD screen↗](https://johnny-five.io/api/lcd/) [ + show me example](https://editor.p5js.org/methio/sketches/5C3DsmEnI)
+- [LCD screen↗](https://johnny-five.io/api/lcd/)  - [*show me example*](https://editor.p5js.org/methio/sketches/5C3DsmEnI)
 ```javascript 
     // LCD controller
     lcd = new five.LCD({
@@ -153,8 +147,9 @@ Components available in the makers'lab
 - [Motion sensor↗](https://johnny-five.io/api/motion/)
 
 ## ML5.js
+ml5.js is a JavaScript library that makes machine learning accessible and easy to use directly in the browser. It is **built on top of TensorFlow.js** and provides a simple, beginner-friendly interface for tasks such as image recognition, text generation, pose detection, and more.
 
-BodyPose documentation on ml5.js website : [https://docs.ml5js.org/#/reference/bodypose↗](https://docs.ml5js.org/#/reference/bodypose)
+In the context of this bootcamp, we will focus on one model : BodyPose. [BodyPose documentation on ml5.js website↗](https://docs.ml5js.org/#/reference/bodypose)
 
 ### BodyPose
 
@@ -196,3 +191,5 @@ BodyPose documentation on ml5.js website : [https://docs.ml5js.org/#/reference/b
     }
 ```
 
+
+[Bring me back to top 🚀](#table-of-content)

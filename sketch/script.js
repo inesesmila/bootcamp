@@ -7,8 +7,7 @@ function preload() {
 
 function setup() {
     // Code that runs once here
-    let myCanvas = createCanvas(500, 500);
-    myCanvas.parent("sketch-container");
+    createCanvas(500, 500).parent("sketch-container");
 }
 
 function draw() {
